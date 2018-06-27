@@ -270,7 +270,7 @@
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_PWhkMXSZEeiXy_sNN3EIww" definitionId="document-templating" version="1.0.1" modelVersion="7.6.0-002">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_PWhkMnSZEeiXy_sNN3EIww" key="documentInput">
                 <expression xmi:type="expression:Expression" xmi:id="_PWhkM3SZEeiXy_sNN3EIww" name="templateContract" content="templateContract" type="DOCUMENT_REF_TYPE" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Document" xmi:id="_rhPaYHljEei1K_sjKuwmTg" name="templateContract"/>
+                  <referencedElements xmi:type="process:Document" xmi:id="_NGrwcHnnEeimVcJ7KG-S2g" name="templateContract"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_PWhkNXSZEeiXy_sNN3EIww" key="replacements">
@@ -325,64 +325,66 @@
               <operator xmi:type="expression:Operator" xmi:id="_ZiXGHnSZEeiXy_sNN3EIww" type="DOCUMENT_CREATE_UPDATE"/>
             </outputs>
           </connectors>
-          <connectors xmi:type="process:Connector" xmi:id="_-_bpgHlEEei1K_sjKuwmTg" documentation="Send the contract to DocuSign service to allow customer digital signature." name="Send contract PDF to DocuSign" definitionId="coSignSend" event="ON_ENTER" definitionVersion="1.0.0">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_-_bpgXlEEei1K_sjKuwmTg" definitionId="coSignSend" version="1.0.0" modelVersion="7.6.0-002">
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_-_bpgnlEEei1K_sjKuwmTg" key="authUserName">
-                <expression xmi:type="expression:Expression" xmi:id="_-_bpg3lEEei1K_sjKuwmTg" name="docusignUsername" content="docusignUsername" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_-_bphHlEEei1K_sjKuwmTg" name="docusignUsername" typeClassname="java.lang.String"/>
+          <connectors xmi:type="process:Connector" xmi:id="_65FXkHnmEeimVcJ7KG-S2g" documentation="Send the contract to DocuSign service to allow customer digital signature." name="Send contract PDF to DocuSign" definitionId="coSignSend" event="ON_ENTER" definitionVersion="1.0.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_65FXkXnmEeimVcJ7KG-S2g" definitionId="coSignSend" version="1.0.0" modelVersion="7.6.0-002">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_65FXknnmEeimVcJ7KG-S2g" key="authUserName">
+                <expression xmi:type="expression:Expression" xmi:id="_65FXk3nmEeimVcJ7KG-S2g" name="docusignUsername" content="docusignUsername" type="TYPE_PARAMETER" returnTypeFixed="true">
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_65FXlHnmEeimVcJ7KG-S2g" name="docusignUsername" typeClassname="java.lang.String"/>
                 </expression>
               </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_-_bphXlEEei1K_sjKuwmTg" key="authUserPass">
-                <expression xmi:type="expression:Expression" xmi:id="_-_bphnlEEei1K_sjKuwmTg" name="docusignPassword" content="docusignPassword" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_-_bph3lEEei1K_sjKuwmTg" name="docusignPassword" typeClassname="java.lang.String"/>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_65FXlXnmEeimVcJ7KG-S2g" key="authUserPass">
+                <expression xmi:type="expression:Expression" xmi:id="_65FXlnnmEeimVcJ7KG-S2g" name="docusignPassword" content="docusignPassword" type="TYPE_PARAMETER" returnTypeFixed="true">
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_65FXl3nmEeimVcJ7KG-S2g" name="docusignPassword" typeClassname="java.lang.String"/>
                 </expression>
               </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_-_bpiHlEEei1K_sjKuwmTg" key="authIntegratorKey">
-                <expression xmi:type="expression:Expression" xmi:id="_-_bpiXlEEei1K_sjKuwmTg" name="docusignAuthIntegratorKey" content="docusignAuthIntegratorKey" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_-_bpinlEEei1K_sjKuwmTg" name="docusignAuthIntegratorKey" typeClassname="java.lang.String"/>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_65FXmHnmEeimVcJ7KG-S2g" key="authIntegratorKey">
+                <expression xmi:type="expression:Expression" xmi:id="_65FXmXnmEeimVcJ7KG-S2g" name="docusignAuthIntegratorKey" content="docusignAuthIntegratorKey" type="TYPE_PARAMETER" returnTypeFixed="true">
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_65FXmnnmEeimVcJ7KG-S2g" name="docusignAuthIntegratorKey" typeClassname="java.lang.String"/>
                 </expression>
               </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_-_bpi3lEEei1K_sjKuwmTg" key="file">
-                <expression xmi:type="expression:Expression" xmi:id="_-_bpjHlEEei1K_sjKuwmTg" name="contract" content="contract" type="DOCUMENT_REF_TYPE" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Document" xmi:id="_-_bpjXlEEei1K_sjKuwmTg" name="contract"/>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_65FXm3nmEeimVcJ7KG-S2g" key="file">
+                <expression xmi:type="expression:Expression" xmi:id="_65FXnHnmEeimVcJ7KG-S2g" name="contract" content="contract" type="DOCUMENT_REF_TYPE" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Document" xmi:id="_65FXnXnmEeimVcJ7KG-S2g" name="contract"/>
                 </expression>
               </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_-_bpjnlEEei1K_sjKuwmTg" key="fileTargetName">
-                <expression xmi:type="expression:Expression" xmi:id="_-_bpj3lEEei1K_sjKuwmTg" name="signed-contract.pdf" content="signed-contract.pdf" returnTypeFixed="true"/>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_65FXnnnmEeimVcJ7KG-S2g" key="fileTargetName">
+                <expression xmi:type="expression:Expression" xmi:id="_65FXn3nmEeimVcJ7KG-S2g" name="signed-contract.pdf" content="signed-contract.pdf" returnTypeFixed="true"/>
               </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_-_bpkHlEEei1K_sjKuwmTg" key="emailSubjet">
-                <expression xmi:type="expression:Expression" xmi:id="_-_bpkXlEEei1K_sjKuwmTg" name="Your new checking account" content="Your new checking account" returnTypeFixed="true"/>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_65FXoHnmEeimVcJ7KG-S2g" key="emailSubjet">
+                <expression xmi:type="expression:Expression" xmi:id="_65FXoXnmEeimVcJ7KG-S2g" name="Your new checking account" content="Your new checking account" returnTypeFixed="true"/>
               </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_-_bpknlEEei1K_sjKuwmTg" key="emailContent">
-                <expression xmi:type="expression:Expression" xmi:id="_-_bpk3lEEei1K_sjKuwmTg" name="generateEmailContent()" content="return &quot;Hi&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_-_bplHlEEei1K_sjKuwmTg" key="destMail">
-                <expression xmi:type="expression:Expression" xmi:id="_-_bplXlEEei1K_sjKuwmTg" name="customer - Customer#getEmailAddress" content="getEmailAddress" type="TYPE_JAVA_METHOD_CALL" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_-_bplnlEEei1K_sjKuwmTg" name="customer" dataType="_WVG6hG7jEeiAPptCnO7t1w" className="com.company.model.Customer"/>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_65FXonnmEeimVcJ7KG-S2g" key="emailContent">
+                <expression xmi:type="expression:Expression" xmi:id="_65FXo3nmEeimVcJ7KG-S2g" name="generateEmailContent()" content="return &quot;&quot;&quot;Hi $customer.firstName $customer.lastName,&#xA;&#xA;Please review and sign your new checking account contract.&quot;&quot;&quot;.toString()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_65FXpHnmEeimVcJ7KG-S2g" name="customer" dataType="_WVG6hG7jEeiAPptCnO7t1w" className="com.company.model.Customer"/>
                 </expression>
               </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_-_bpl3lEEei1K_sjKuwmTg" key="destName">
-                <expression xmi:type="expression:Expression" xmi:id="_-_bpmHlEEei1K_sjKuwmTg" name="fullName()" content="&quot;&quot;&quot;${customer.firstName} ${customer.middleName} ${customer.lastName} ${customer.suffix}&quot;&quot;&quot;.toString()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_-_bpmXlEEei1K_sjKuwmTg" name="customer" dataType="_WVG6hG7jEeiAPptCnO7t1w" className="com.company.model.Customer"/>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_65FXpXnmEeimVcJ7KG-S2g" key="destMail">
+                <expression xmi:type="expression:Expression" xmi:id="_65FXpnnmEeimVcJ7KG-S2g" name="customer - Customer#getEmailAddress" content="getEmailAddress" type="TYPE_JAVA_METHOD_CALL" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_65FXp3nmEeimVcJ7KG-S2g" name="customer" dataType="_WVG6hG7jEeiAPptCnO7t1w" className="com.company.model.Customer"/>
                 </expression>
               </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_-_bpmnlEEei1K_sjKuwmTg" key="destAccountId">
-                <expression xmi:type="expression:Expression" xmi:id="_-_bpm3lEEei1K_sjKuwmTg" name="docusignAccountId" content="docusignAccountId" type="TYPE_PARAMETER" returnTypeFixed="true">
-                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_-_bpnHlEEei1K_sjKuwmTg" name="docusignAccountId" typeClassname="java.lang.String"/>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_65FXqHnmEeimVcJ7KG-S2g" key="destName">
+                <expression xmi:type="expression:Expression" xmi:id="_65FXqXnmEeimVcJ7KG-S2g" name="fullName()" content="&quot;&quot;&quot;${customer.firstName} ${customer.middleName} ${customer.lastName} ${customer.suffix}&quot;&quot;&quot;.toString()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_65FXqnnmEeimVcJ7KG-S2g" name="customer" dataType="_WVG6hG7jEeiAPptCnO7t1w" className="com.company.model.Customer"/>
                 </expression>
               </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_-_bpnXlEEei1K_sjKuwmTg" key="path">
-                <expression xmi:type="expression:Expression" xmi:id="_-_bpnnlEEei1K_sjKuwmTg" name="https://demo.docusign.net/restapi" content="https://demo.docusign.net/restapi" returnTypeFixed="true"/>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_65FXq3nmEeimVcJ7KG-S2g" key="destAccountId">
+                <expression xmi:type="expression:Expression" xmi:id="_65FXrHnmEeimVcJ7KG-S2g" name="docusignAccountId" content="docusignAccountId" type="TYPE_PARAMETER" returnTypeFixed="true">
+                  <referencedElements xmi:type="parameter:Parameter" xmi:id="_65FXrXnmEeimVcJ7KG-S2g" name="docusignAccountId" typeClassname="java.lang.String"/>
+                </expression>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_65FXrnnmEeimVcJ7KG-S2g" key="path">
+                <expression xmi:type="expression:Expression" xmi:id="_65FXr3nmEeimVcJ7KG-S2g" name="https://demo.docusign.net/restapi" content="https://demo.docusign.net/restapi" returnTypeFixed="true"/>
               </parameters>
             </configuration>
-            <outputs xmi:type="expression:Operation" xmi:id="_-_bpn3lEEei1K_sjKuwmTg">
-              <leftOperand xmi:type="expression:Expression" xmi:id="_-_bpoHlEEei1K_sjKuwmTg" name="customer" content="customer" type="TYPE_VARIABLE" returnType="com.company.model.Customer">
-                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_-_bpoXlEEei1K_sjKuwmTg" name="customer" dataType="_WVG6hG7jEeiAPptCnO7t1w" className="com.company.model.Customer"/>
+            <outputs xmi:type="expression:Operation" xmi:id="_65FXsHnmEeimVcJ7KG-S2g">
+              <leftOperand xmi:type="expression:Expression" xmi:id="_65FXsXnmEeimVcJ7KG-S2g" name="customer" content="customer" type="TYPE_VARIABLE" returnType="com.company.model.Customer">
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_65FXsnnmEeimVcJ7KG-S2g" name="customer" dataType="_WVG6hG7jEeiAPptCnO7t1w" className="com.company.model.Customer"/>
               </leftOperand>
-              <rightOperand xmi:type="expression:Expression" xmi:id="_-_bponlEEei1K_sjKuwmTg" name="envelopeId" content="envelopeId" type="CONNECTOR_OUTPUT_TYPE">
-                <referencedElements xmi:type="definition:Output" xmi:id="_-_bpo3lEEei1K_sjKuwmTg" name="envelopeId" type="java.lang.String"/>
+              <rightOperand xmi:type="expression:Expression" xmi:id="_65FXs3nmEeimVcJ7KG-S2g" name="envelopeId" content="envelopeId" type="CONNECTOR_OUTPUT_TYPE">
+                <referencedElements xmi:type="definition:Output" xmi:id="_65FXtHnmEeimVcJ7KG-S2g" name="envelopeId" type="java.lang.String"/>
               </rightOperand>
-              <operator xmi:type="expression:Operator" xmi:id="_-_bppHlEEei1K_sjKuwmTg" type="JAVA_METHOD" expression="setContractDocusignId">
+              <operator xmi:type="expression:Operator" xmi:id="_65FXtXnmEeimVcJ7KG-S2g" type="JAVA_METHOD" expression="setContractDocusignId">
                 <inputTypes>java.lang.String</inputTypes>
               </operator>
             </outputs>
@@ -687,101 +689,101 @@
         <parameters xmi:type="parameter:Parameter" xmi:id="_N8kXR3lFEei1K_sjKuwmTg" name="docusignUsername" typeClassname="java.lang.String"/>
         <parameters xmi:type="parameter:Parameter" xmi:id="_N8kXSHlFEei1K_sjKuwmTg" name="docusignAccountId" typeClassname="java.lang.String"/>
       </configurations>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_awvNQHlFEei1K_sjKuwmTg" name="Test" version="7.6.0-002" username="walter.bates" password="bpm">
-        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_awvNQXlFEei1K_sjKuwmTg">
-          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_awvNQnlFEei1K_sjKuwmTg" name="Customer">
-            <groups xmi:type="actormapping:Groups" xmi:id="_awvNQ3lFEei1K_sjKuwmTg"/>
-            <memberships xmi:type="actormapping:Membership" xmi:id="_awvNRHlFEei1K_sjKuwmTg"/>
-            <roles xmi:type="actormapping:Roles" xmi:id="_awvNRXlFEei1K_sjKuwmTg">
+      <configurations xmi:type="configuration:Configuration" xmi:id="_nYTVAHnlEeimVcJ7KG-S2g" name="Test" version="7.6.0-002" username="walter.bates" password="bpm">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_nYTVAXnlEeimVcJ7KG-S2g">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_nYTVAnnlEeimVcJ7KG-S2g" name="Customer">
+            <groups xmi:type="actormapping:Groups" xmi:id="_nYTVA3nlEeimVcJ7KG-S2g"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_nYTVBHnlEeimVcJ7KG-S2g"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_nYTVBXnlEeimVcJ7KG-S2g">
               <role>member</role>
             </roles>
-            <users xmi:type="actormapping:Users" xmi:id="_awvNRnlFEei1K_sjKuwmTg"/>
+            <users xmi:type="actormapping:Users" xmi:id="_nYTVBnnlEeimVcJ7KG-S2g"/>
           </actorMapping>
         </actorMappings>
-        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_awvNR3lFEei1K_sjKuwmTg" type="CONNECTOR" definitionId="scripting-groovy-script" definitionVersion="1.0.1" implementationId="scripting-groovy-script-impl" implementationVersion="1.0.2"/>
-        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_awvNSHlFEei1K_sjKuwmTg" type="CONNECTOR" definitionId="document-templating" definitionVersion="1.0.1" implementationId="document-templating-impl" implementationVersion="1.0.1"/>
-        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_awvNSXlFEei1K_sjKuwmTg" type="CONNECTOR" definitionId="document-converter" definitionVersion="1.0.2" implementationId="document-converter-impl" implementationVersion="1.0.2"/>
-        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_awvNSnlFEei1K_sjKuwmTg" type="CONNECTOR" definitionId="coSignSend" definitionVersion="1.0.0" implementationId="coSignSend-impl" implementationVersion="1.0.0"/>
-        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_awvNS3lFEei1K_sjKuwmTg" type="CONNECTOR" definitionId="coSignGetEnv" definitionVersion="1.0.0" implementationId="coSignGetEnv-impl" implementationVersion="1.0.0"/>
-        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_awvNTHlFEei1K_sjKuwmTg" type="ACTOR_FILTER" definitionId="initiator" definitionVersion="1.0.0" implementationId="initiator-impl" implementationVersion="1.0.0"/>
-        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_awvNTXlFEei1K_sjKuwmTg" id="ACTOR_FILTER">
-          <children xmi:type="configuration:FragmentContainer" xmi:id="_awvNTnlFEei1K_sjKuwmTg" id="initiator-impl-1.0.0">
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNT3lFEei1K_sjKuwmTg" key="initiator-impl -- 1.0.0" value="bonita-userfilter-initiator-impl-1.0.0-SNAPSHOT.jar" type="ACTOR_FILTER"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_nYTVB3nlEeimVcJ7KG-S2g" type="CONNECTOR" definitionId="scripting-groovy-script" definitionVersion="1.0.1" implementationId="scripting-groovy-script-impl" implementationVersion="1.0.2"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_nYTVCHnlEeimVcJ7KG-S2g" type="CONNECTOR" definitionId="document-templating" definitionVersion="1.0.1" implementationId="document-templating-impl" implementationVersion="1.0.1"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_nYTVCXnlEeimVcJ7KG-S2g" type="CONNECTOR" definitionId="document-converter" definitionVersion="1.0.2" implementationId="document-converter-impl" implementationVersion="1.0.2"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_nYTVCnnlEeimVcJ7KG-S2g" type="CONNECTOR" definitionId="coSignSend" definitionVersion="1.0.0" implementationId="coSignSend-impl" implementationVersion="1.0.0"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_nYTVC3nlEeimVcJ7KG-S2g" type="CONNECTOR" definitionId="coSignGetEnv" definitionVersion="1.0.0" implementationId="coSignGetEnv-impl" implementationVersion="1.0.0"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_nYTVDHnlEeimVcJ7KG-S2g" type="ACTOR_FILTER" definitionId="initiator" definitionVersion="1.0.0" implementationId="initiator-impl" implementationVersion="1.0.0"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_nYTVDXnlEeimVcJ7KG-S2g" id="ACTOR_FILTER">
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_nYTVDnnlEeimVcJ7KG-S2g" id="initiator-impl-1.0.0">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVD3nlEeimVcJ7KG-S2g" key="initiator-impl -- 1.0.0" value="bonita-userfilter-initiator-impl-1.0.0-SNAPSHOT.jar" type="ACTOR_FILTER"/>
           </children>
         </processDependencies>
-        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_awvNUHlFEei1K_sjKuwmTg" id="CONNECTOR">
-          <children xmi:type="configuration:FragmentContainer" xmi:id="_awvNUXlFEei1K_sjKuwmTg" id="scripting-groovy-script-impl-1.0.2">
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNUnlFEei1K_sjKuwmTg" key="scripting-groovy-script-impl -- 1.0.2" value="bonita-connector-scripting-groovy-script-impl-1.0.2.jar" type="CONNECTOR"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_nYTVEHnlEeimVcJ7KG-S2g" id="CONNECTOR">
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_nYTVEXnlEeimVcJ7KG-S2g" id="scripting-groovy-script-impl-1.0.2">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVEnnlEeimVcJ7KG-S2g" key="scripting-groovy-script-impl -- 1.0.2" value="bonita-connector-scripting-groovy-script-impl-1.0.2.jar" type="CONNECTOR"/>
           </children>
-          <children xmi:type="configuration:FragmentContainer" xmi:id="_awvNU3lFEei1K_sjKuwmTg" id="document-templating-impl-1.0.1">
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNVHlFEei1K_sjKuwmTg" key="document-templating-impl -- 1.0.1" value="bonita-connector-document-templating-impl-1.0.1.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNVXlFEei1K_sjKuwmTg" key="document-templating-impl -- 1.0.1" value="oro-2.0.8.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNVnlFEei1K_sjKuwmTg" key="document-templating-impl -- 1.0.1" value="itext-2.1.7.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNV3lFEei1K_sjKuwmTg" key="document-templating-impl -- 1.0.1" value="fr.opensagres.xdocreport.template.velocity-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNWHlFEei1K_sjKuwmTg" key="document-templating-impl -- 1.0.1" value="org.odftoolkit.odfdom.converter.xhtml-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNWXlFEei1K_sjKuwmTg" key="document-templating-impl -- 1.0.1" value="fr.opensagres.xdocreport.converter-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNWnlFEei1K_sjKuwmTg" key="document-templating-impl -- 1.0.1" value="commons-lang-2.4.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNW3lFEei1K_sjKuwmTg" key="document-templating-impl -- 1.0.1" value="org.odftoolkit.odfdom.converter.pdf-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNXHlFEei1K_sjKuwmTg" key="document-templating-impl -- 1.0.1" value="xercesImpl-2.9.1.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNXXlFEei1K_sjKuwmTg" key="document-templating-impl -- 1.0.1" value="org.odftoolkit.odfdom.converter.core-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNXnlFEei1K_sjKuwmTg" key="document-templating-impl -- 1.0.1" value="odfdom-java-0.8.7.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNX3lFEei1K_sjKuwmTg" key="document-templating-impl -- 1.0.1" value="fr.opensagres.xdocreport.converter.odt.odfdom-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNYHlFEei1K_sjKuwmTg" key="document-templating-impl -- 1.0.1" value="fr.opensagres.xdocreport.document-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNYXlFEei1K_sjKuwmTg" key="document-templating-impl -- 1.0.1" value="fr.opensagres.xdocreport.template-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNYnlFEei1K_sjKuwmTg" key="document-templating-impl -- 1.0.1" value="fr.opensagres.xdocreport.itext.extension-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNY3lFEei1K_sjKuwmTg" key="document-templating-impl -- 1.0.1" value="fr.opensagres.xdocreport.document.docx-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNZHlFEei1K_sjKuwmTg" key="document-templating-impl -- 1.0.1" value="velocity-1.7.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNZXlFEei1K_sjKuwmTg" key="document-templating-impl -- 1.0.1" value="fr.opensagres.xdocreport.core-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNZnlFEei1K_sjKuwmTg" key="document-templating-impl -- 1.0.1" value="fr.opensagres.xdocreport.document.odt-1.0.5.jar" type="CONNECTOR"/>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_nYTVE3nlEeimVcJ7KG-S2g" id="document-templating-impl-1.0.1">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVFHnlEeimVcJ7KG-S2g" key="document-templating-impl -- 1.0.1" value="bonita-connector-document-templating-impl-1.0.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVFXnlEeimVcJ7KG-S2g" key="document-templating-impl -- 1.0.1" value="oro-2.0.8.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVFnnlEeimVcJ7KG-S2g" key="document-templating-impl -- 1.0.1" value="itext-2.1.7.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVF3nlEeimVcJ7KG-S2g" key="document-templating-impl -- 1.0.1" value="fr.opensagres.xdocreport.template.velocity-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVGHnlEeimVcJ7KG-S2g" key="document-templating-impl -- 1.0.1" value="org.odftoolkit.odfdom.converter.xhtml-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVGXnlEeimVcJ7KG-S2g" key="document-templating-impl -- 1.0.1" value="fr.opensagres.xdocreport.converter-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVGnnlEeimVcJ7KG-S2g" key="document-templating-impl -- 1.0.1" value="commons-lang-2.4.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVG3nlEeimVcJ7KG-S2g" key="document-templating-impl -- 1.0.1" value="org.odftoolkit.odfdom.converter.pdf-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVHHnlEeimVcJ7KG-S2g" key="document-templating-impl -- 1.0.1" value="xercesImpl-2.9.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVHXnlEeimVcJ7KG-S2g" key="document-templating-impl -- 1.0.1" value="org.odftoolkit.odfdom.converter.core-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVHnnlEeimVcJ7KG-S2g" key="document-templating-impl -- 1.0.1" value="odfdom-java-0.8.7.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVH3nlEeimVcJ7KG-S2g" key="document-templating-impl -- 1.0.1" value="fr.opensagres.xdocreport.converter.odt.odfdom-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVIHnlEeimVcJ7KG-S2g" key="document-templating-impl -- 1.0.1" value="fr.opensagres.xdocreport.document-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVIXnlEeimVcJ7KG-S2g" key="document-templating-impl -- 1.0.1" value="fr.opensagres.xdocreport.template-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVInnlEeimVcJ7KG-S2g" key="document-templating-impl -- 1.0.1" value="fr.opensagres.xdocreport.itext.extension-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVI3nlEeimVcJ7KG-S2g" key="document-templating-impl -- 1.0.1" value="fr.opensagres.xdocreport.document.docx-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVJHnlEeimVcJ7KG-S2g" key="document-templating-impl -- 1.0.1" value="velocity-1.7.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVJXnlEeimVcJ7KG-S2g" key="document-templating-impl -- 1.0.1" value="fr.opensagres.xdocreport.core-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVJnnlEeimVcJ7KG-S2g" key="document-templating-impl -- 1.0.1" value="fr.opensagres.xdocreport.document.odt-1.0.5.jar" type="CONNECTOR"/>
           </children>
-          <children xmi:type="configuration:FragmentContainer" xmi:id="_awvNZ3lFEei1K_sjKuwmTg" id="document-converter-impl-1.0.2">
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNaHlFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="bonita-connector-document-converter-impl-1.0.2.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNaXlFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="oro-2.0.8.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNanlFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="itext-2.1.7.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNa3lFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="fr.opensagres.xdocreport.template.velocity-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNbHlFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="org.odftoolkit.odfdom.converter.xhtml-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNbXlFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="fr.opensagres.xdocreport.converter-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNbnlFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="commons-lang-2.4.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNb3lFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="xercesImpl-2.9.1.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNcHlFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="org.odftoolkit.odfdom.converter.pdf-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNcXlFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="poi-3.10-FINAL.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNcnlFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="org.apache.poi.xwpf.converter.core-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNc3lFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="odfdom-java-0.8.7.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNdHlFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="org.odftoolkit.odfdom.converter.core-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNdXlFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="fr.opensagres.xdocreport.converter.odt.odfdom-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNdnlFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="fr.opensagres.xdocreport.converter.docx.xwpf-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNd3lFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="org.apache.poi.xwpf.converter.xhtml-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNeHlFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="fr.opensagres.xdocreport.document-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNeXlFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="fr.opensagres.xdocreport.template-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNenlFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="ooxml-schemas-1.1.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNe3lFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="poi-ooxml-3.10-FINAL.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNfHlFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="fr.opensagres.xdocreport.itext.extension-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNfXlFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="org.apache.poi.xwpf.converter.pdf-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNfnlFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="fr.opensagres.xdocreport.document.docx-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNf3lFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="fr.opensagres.xdocreport.document.odt-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNgHlFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="fr.opensagres.xdocreport.core-1.0.5.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNgXlFEei1K_sjKuwmTg" key="document-converter-impl -- 1.0.2" value="velocity-1.7.jar" type="CONNECTOR"/>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_nYTVJ3nlEeimVcJ7KG-S2g" id="document-converter-impl-1.0.2">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVKHnlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="bonita-connector-document-converter-impl-1.0.2.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVKXnlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="oro-2.0.8.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVKnnlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="itext-2.1.7.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVK3nlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="fr.opensagres.xdocreport.template.velocity-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVLHnlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="org.odftoolkit.odfdom.converter.xhtml-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVLXnlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="fr.opensagres.xdocreport.converter-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVLnnlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="commons-lang-2.4.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVL3nlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="xercesImpl-2.9.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVMHnlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="org.odftoolkit.odfdom.converter.pdf-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVMXnlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="poi-3.10-FINAL.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVMnnlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="org.apache.poi.xwpf.converter.core-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVM3nlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="odfdom-java-0.8.7.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVNHnlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="org.odftoolkit.odfdom.converter.core-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVNXnlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="fr.opensagres.xdocreport.converter.odt.odfdom-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVNnnlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="fr.opensagres.xdocreport.converter.docx.xwpf-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVN3nlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="org.apache.poi.xwpf.converter.xhtml-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVOHnlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="fr.opensagres.xdocreport.document-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVOXnlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="fr.opensagres.xdocreport.template-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVOnnlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="ooxml-schemas-1.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVO3nlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="poi-ooxml-3.10-FINAL.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVPHnlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="fr.opensagres.xdocreport.itext.extension-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVPXnlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="org.apache.poi.xwpf.converter.pdf-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVPnnlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="fr.opensagres.xdocreport.document.docx-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVP3nlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="fr.opensagres.xdocreport.document.odt-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVQHnlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="fr.opensagres.xdocreport.core-1.0.5.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVQXnlEeimVcJ7KG-S2g" key="document-converter-impl -- 1.0.2" value="velocity-1.7.jar" type="CONNECTOR"/>
           </children>
-          <children xmi:type="configuration:FragmentContainer" xmi:id="_awvNgnlFEei1K_sjKuwmTg" id="coSignSend-impl-1.0.0">
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNg3lFEei1K_sjKuwmTg" key="coSignSend-impl -- 1.0.0" value="coSignSend-impl-1.0.0.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNhHlFEei1K_sjKuwmTg" key="coSignSend-impl -- 1.0.0" value="libSign.jar" type="CONNECTOR"/>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_nYTVQnnlEeimVcJ7KG-S2g" id="coSignSend-impl-1.0.0">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVQ3nlEeimVcJ7KG-S2g" key="coSignSend-impl -- 1.0.0" value="coSignSend-impl-1.0.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVRHnlEeimVcJ7KG-S2g" key="coSignSend-impl -- 1.0.0" value="libSign.jar" type="CONNECTOR"/>
           </children>
-          <children xmi:type="configuration:FragmentContainer" xmi:id="_awvNhXlFEei1K_sjKuwmTg" id="coSignGetEnv-impl-1.0.0">
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNhnlFEei1K_sjKuwmTg" key="coSignGetEnv-impl -- 1.0.0" value="coSignGetEnv-impl-1.0.0.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_awvNh3lFEei1K_sjKuwmTg" key="coSignGetEnv-impl -- 1.0.0" value="libSign.jar" type="CONNECTOR"/>
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_nYTVRXnlEeimVcJ7KG-S2g" id="coSignGetEnv-impl-1.0.0">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVRnnlEeimVcJ7KG-S2g" key="coSignGetEnv-impl -- 1.0.0" value="coSignGetEnv-impl-1.0.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_nYTVR3nlEeimVcJ7KG-S2g" key="coSignGetEnv-impl -- 1.0.0" value="libSign.jar" type="CONNECTOR"/>
           </children>
         </processDependencies>
-        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_awvNiHlFEei1K_sjKuwmTg" id="DATA_TYPES"/>
-        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_awvNiXlFEei1K_sjKuwmTg" id="GROOVY_SCRIPT"/>
-        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_awvNinlFEei1K_sjKuwmTg" id="OTHER"/>
-        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_awvNi3lFEei1K_sjKuwmTg" id="DATA_TYPES"/>
-        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_awvNjHlFEei1K_sjKuwmTg" id="GROOVY_SCRIPT"/>
-        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_awvNjXlFEei1K_sjKuwmTg" id="VALIDATOR"/>
-        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_awvNjnlFEei1K_sjKuwmTg" id="OTHER"/>
-        <parameters xmi:type="parameter:Parameter" xmi:id="_awvNj3lFEei1K_sjKuwmTg" name="docusignAuthIntegratorKey" value="a2e18cc2-65d9-42a5-94e9-5f2f3f5dd863" typeClassname="java.lang.String"/>
-        <parameters xmi:type="parameter:Parameter" xmi:id="_awvNkHlFEei1K_sjKuwmTg" name="docusignPassword" value="#oxyd8kc3!" typeClassname="java.lang.String"/>
-        <parameters xmi:type="parameter:Parameter" xmi:id="_awvNkXlFEei1K_sjKuwmTg" name="docusignUsername" value="antoine.mottier@bonitasoft.com" typeClassname="java.lang.String"/>
-        <parameters xmi:type="parameter:Parameter" xmi:id="_awvNknlFEei1K_sjKuwmTg" name="docusignAccountId" value="4748987" typeClassname="java.lang.String"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_nYTVSHnlEeimVcJ7KG-S2g" id="DATA_TYPES"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_nYTVSXnlEeimVcJ7KG-S2g" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_nYTVSnnlEeimVcJ7KG-S2g" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_nYTVS3nlEeimVcJ7KG-S2g" id="DATA_TYPES"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_nYTVTHnlEeimVcJ7KG-S2g" id="GROOVY_SCRIPT"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_nYTVTXnlEeimVcJ7KG-S2g" id="VALIDATOR"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_nYTVTnnlEeimVcJ7KG-S2g" id="OTHER"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_nYTVT3nlEeimVcJ7KG-S2g" name="docusignAuthIntegratorKey" value="a2e18cc2-65d9-42a5-94e9-5f2f3f5dd863" typeClassname="java.lang.String"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_nYTVUHnlEeimVcJ7KG-S2g" name="docusignPassword" value="#oxyd8kc3!!" typeClassname="java.lang.String"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_nYTVUXnlEeimVcJ7KG-S2g" name="docusignUsername" value="antoine.mottier@bonitasoft.com" typeClassname="java.lang.String"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_nYTVUnnlEeimVcJ7KG-S2g" name="docusignAccountId" value="4748987" typeClassname="java.lang.String"/>
       </configurations>
       <parameters xmi:type="parameter:Parameter" xmi:id="_iyBTkHSZEeiXy_sNN3EIww" name="docusignAuthIntegratorKey" typeClassname="java.lang.String"/>
       <parameters xmi:type="parameter:Parameter" xmi:id="_kXuGEHSZEeiXy_sNN3EIww" name="docusignPassword" typeClassname="java.lang.String"/>
@@ -818,10 +820,10 @@
         <url xmi:type="expression:Expression" xmi:id="_32Au8nSSEeiXy_sNN3EIww" name="" content="" returnTypeFixed="true"/>
         <initialMultipleContent xmi:type="expression:Expression" xmi:id="_32Au83SSEeiXy_sNN3EIww" name="" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List" returnTypeFixed="true"/>
       </documents>
-      <documents xmi:type="process:Document" xmi:id="_rhPaYXljEei1K_sjKuwmTg" name="templateContract" defaultValueIdOfDocumentStore="templateContract.docx" documentType="INTERNAL">
-        <mimeType xmi:type="expression:Expression" xmi:id="_rhPaYnljEei1K_sjKuwmTg" name="" content="" returnTypeFixed="true"/>
-        <url xmi:type="expression:Expression" xmi:id="_rhPaY3ljEei1K_sjKuwmTg" name="" content="" returnTypeFixed="true"/>
-        <initialMultipleContent xmi:type="expression:Expression" xmi:id="_rhPaZHljEei1K_sjKuwmTg" name="" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List" returnTypeFixed="true"/>
+      <documents xmi:type="process:Document" xmi:id="_NGrwcXnnEeimVcJ7KG-S2g" name="templateContract" defaultValueIdOfDocumentStore="templateContract.docx" documentType="INTERNAL">
+        <mimeType xmi:type="expression:Expression" xmi:id="_NGrwcnnnEeimVcJ7KG-S2g" name="" content="" returnTypeFixed="true"/>
+        <url xmi:type="expression:Expression" xmi:id="_NGrwc3nnEeimVcJ7KG-S2g" name="" content="" returnTypeFixed="true"/>
+        <initialMultipleContent xmi:type="expression:Expression" xmi:id="_NGrwdHnnEeimVcJ7KG-S2g" name="" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List" returnTypeFixed="true"/>
       </documents>
       <documents xmi:type="process:Document" xmi:id="_LH0IEHSZEeiXy_sNN3EIww" name="contract">
         <mimeType xmi:type="expression:Expression" xmi:id="_LH0IEXSZEeiXy_sNN3EIww" name="" content="" returnTypeFixed="true"/>

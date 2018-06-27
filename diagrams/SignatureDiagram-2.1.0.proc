@@ -206,35 +206,35 @@
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_A1pYEHSdEeiXy_sNN3EIww" id="VALIDATOR"/>
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_A1pYEXSdEeiXy_sNN3EIww" id="OTHER"/>
       </configurations>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_bfiq0HShEeiXy_sNN3EIww" name="Test" version="7.6.0-002" username="walter.bates" password="bpm">
-        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_bfiq0XShEeiXy_sNN3EIww">
-          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_bfiq0nShEeiXy_sNN3EIww" name="actor">
-            <groups xmi:type="actormapping:Groups" xmi:id="_bfiq03ShEeiXy_sNN3EIww"/>
-            <memberships xmi:type="actormapping:Membership" xmi:id="_bfiq1HShEeiXy_sNN3EIww"/>
-            <roles xmi:type="actormapping:Roles" xmi:id="_bfiq1XShEeiXy_sNN3EIww">
+      <configurations xmi:type="configuration:Configuration" xmi:id="_rBELcHnlEeimVcJ7KG-S2g" name="Test" version="7.6.0-002" username="walter.bates" password="bpm">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_rBELcXnlEeimVcJ7KG-S2g">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_rBELcnnlEeimVcJ7KG-S2g" name="actor">
+            <groups xmi:type="actormapping:Groups" xmi:id="_rBELc3nlEeimVcJ7KG-S2g"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_rBELdHnlEeimVcJ7KG-S2g"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_rBELdXnlEeimVcJ7KG-S2g">
               <role>member</role>
             </roles>
-            <users xmi:type="actormapping:Users" xmi:id="_bfiq1nShEeiXy_sNN3EIww"/>
+            <users xmi:type="actormapping:Users" xmi:id="_rBELdnnlEeimVcJ7KG-S2g"/>
           </actorMapping>
         </actorMappings>
-        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_bfiq13ShEeiXy_sNN3EIww" type="CONNECTOR" definitionId="coSignGetStatus" definitionVersion="1.0.0" implementationId="coSignGetStatus-impl" implementationVersion="1.0.0"/>
-        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bfiq2HShEeiXy_sNN3EIww" id="ACTOR_FILTER"/>
-        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bfiq2XShEeiXy_sNN3EIww" id="CONNECTOR">
-          <children xmi:type="configuration:FragmentContainer" xmi:id="_bfiq2nShEeiXy_sNN3EIww" id="coSignGetStatus-impl-1.0.0">
-            <fragments xmi:type="configuration:Fragment" xmi:id="_bfiq23ShEeiXy_sNN3EIww" key="coSignGetStatus-impl -- 1.0.0" value="coSignGetStatus-impl-1.0.0.jar" type="CONNECTOR"/>
-            <fragments xmi:type="configuration:Fragment" xmi:id="_bfiq3HShEeiXy_sNN3EIww" key="coSignGetStatus-impl -- 1.0.0" value="libSign.jar" type="CONNECTOR"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_rBELd3nlEeimVcJ7KG-S2g" type="CONNECTOR" definitionId="coSignGetStatus" definitionVersion="1.0.0" implementationId="coSignGetStatus-impl" implementationVersion="1.0.0"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_rBELeHnlEeimVcJ7KG-S2g" id="ACTOR_FILTER"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_rBELeXnlEeimVcJ7KG-S2g" id="CONNECTOR">
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_rBELennlEeimVcJ7KG-S2g" id="coSignGetStatus-impl-1.0.0">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_rBELe3nlEeimVcJ7KG-S2g" key="coSignGetStatus-impl -- 1.0.0" value="coSignGetStatus-impl-1.0.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_rBELfHnlEeimVcJ7KG-S2g" key="coSignGetStatus-impl -- 1.0.0" value="libSign.jar" type="CONNECTOR"/>
           </children>
         </processDependencies>
-        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bfiq3XShEeiXy_sNN3EIww" id="DATA_TYPES"/>
-        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bfiq3nShEeiXy_sNN3EIww" id="GROOVY_SCRIPT"/>
-        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bfiq33ShEeiXy_sNN3EIww" id="OTHER"/>
-        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bfiq4HShEeiXy_sNN3EIww" id="DATA_TYPES"/>
-        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bfiq4XShEeiXy_sNN3EIww" id="GROOVY_SCRIPT"/>
-        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bfiq4nShEeiXy_sNN3EIww" id="VALIDATOR"/>
-        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_bfiq43ShEeiXy_sNN3EIww" id="OTHER"/>
-        <parameters xmi:type="parameter:Parameter" xmi:id="_bfiq5HShEeiXy_sNN3EIww" name="docusignPassword" value="#oxyd8kc3!" typeClassname="java.lang.String"/>
-        <parameters xmi:type="parameter:Parameter" xmi:id="_bfiq5XShEeiXy_sNN3EIww" name="docusignUser" value="antoine.mottier@bonitasoft.com" typeClassname="java.lang.String"/>
-        <parameters xmi:type="parameter:Parameter" xmi:id="_bfiq5nShEeiXy_sNN3EIww" name="docusignAuthIntegratorKey" value="a2e18cc2-65d9-42a5-94e9-5f2f3f5dd863" typeClassname="java.lang.String"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_rBELfXnlEeimVcJ7KG-S2g" id="DATA_TYPES"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_rBELfnnlEeimVcJ7KG-S2g" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_rBELf3nlEeimVcJ7KG-S2g" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_rBELgHnlEeimVcJ7KG-S2g" id="DATA_TYPES"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_rBELgXnlEeimVcJ7KG-S2g" id="GROOVY_SCRIPT"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_rBELgnnlEeimVcJ7KG-S2g" id="VALIDATOR"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_rBELg3nlEeimVcJ7KG-S2g" id="OTHER"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_rBELhHnlEeimVcJ7KG-S2g" name="docusignPassword" value="#oxyd8kc3!!" typeClassname="java.lang.String"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_rBELhXnlEeimVcJ7KG-S2g" name="docusignUser" value="antoine.mottier@bonitasoft.com" typeClassname="java.lang.String"/>
+        <parameters xmi:type="parameter:Parameter" xmi:id="_rBELhnnlEeimVcJ7KG-S2g" name="docusignAuthIntegratorKey" value="a2e18cc2-65d9-42a5-94e9-5f2f3f5dd863" typeClassname="java.lang.String"/>
       </configurations>
       <parameters xmi:type="parameter:Parameter" xmi:id="_A1pYEnSdEeiXy_sNN3EIww" name="docusignPassword" typeClassname="java.lang.String"/>
       <parameters xmi:type="parameter:Parameter" xmi:id="_A1pYE3SdEeiXy_sNN3EIww" name="docusignUser" typeClassname="java.lang.String"/>
