@@ -2,13 +2,13 @@
   "designerVersion" : "1.7.49",
   "id" : "AccountOpenning",
   "name" : "AccountOpenning",
-  "lastUpdate" : 1529338418832,
+  "lastUpdate" : 1530030274862,
   "rows" : [ [ {
     "type" : "component",
     "dimension" : {
       "xs" : 12,
       "sm" : 12,
-      "md" : 4,
+      "md" : 12,
       "lg" : 12
     },
     "propertyValues" : {
@@ -26,7 +26,7 @@
       },
       "level" : {
         "type" : "constant",
-        "value" : "Level 2"
+        "value" : "Level 1"
       },
       "alignment" : {
         "type" : "constant",
@@ -82,17 +82,17 @@
       },
       "hidden" : {
         "type" : "expression",
-        "value" : "pendingIdentificationTaskInfo.length !== 1"
+        "value" : "hideFilesUploadPreview"
       },
       "repeatedCollection" : {
         "type" : "variable",
         "value" : ""
       }
     },
-    "reference" : "fa5cadb3-85d4-4dc5-96f0-54fd178fb901",
+    "reference" : "8c951e99-3232-4ba6-a074-eec9c550537c",
     "id" : "pbContainer",
     "rows" : [ [ {
-      "type" : "component",
+      "type" : "container",
       "dimension" : {
         "xs" : 12,
         "sm" : 12,
@@ -108,28 +108,156 @@
           "type" : "constant",
           "value" : false
         },
-        "text" : {
-          "type" : "interpolation",
-          "value" : "Identification"
-        },
-        "level" : {
-          "type" : "constant",
-          "value" : "Level 2"
-        },
-        "alignment" : {
-          "type" : "constant",
-          "value" : "left"
+        "repeatedCollection" : {
+          "type" : "variable",
+          "value" : ""
         }
       },
-      "reference" : "b5480bc6-7858-4123-b93c-b9090ca682ce",
-      "id" : "pbTitle"
+      "reference" : "fa5cadb3-85d4-4dc5-96f0-54fd178fb901",
+      "id" : "pbContainer",
+      "rows" : [ [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "panel-title"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Identification"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 2"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "b5480bc6-7858-4123-b93c-b9090ca682ce",
+        "id" : "pbTitle"
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "expression",
+            "value" : "pendingIdentificationTaskInfo.length !== 1"
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<span class=\"glyphicon glyphicon-camera\"></span> Capture & <span class=\"glyphicon glyphicon-upload\"></span> Upload"
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "page"
+          },
+          "targetUrl" : {
+            "type" : "constant",
+            "value" : "http://"
+          },
+          "pageToken" : {
+            "type" : "constant",
+            "value" : "uploadIdentification"
+          },
+          "processName" : {
+            "type" : "constant"
+          },
+          "processVersion" : {
+            "type" : "constant"
+          },
+          "taskId" : {
+            "type" : "constant"
+          },
+          "caseId" : {
+            "type" : "constant"
+          },
+          "target" : {
+            "type" : "constant",
+            "value" : "_self"
+          },
+          "appToken" : {
+            "type" : "constant"
+          },
+          "urlParams" : {
+            "type" : "expression",
+            "value" : "identificationTaskInfoURLParameter"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "primary"
+          }
+        },
+        "reference" : "9c4b8cf2-8fed-4125-8b55-a8752437aded",
+        "id" : "pbLink"
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "Process document"
+          },
+          "url" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "document" : {
+            "type" : "variable",
+            "value" : "context.identification_ref"
+          },
+          "showPreview" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "d32b6e36-ee6b-47b7-b7b1-29851d617d3c",
+        "id" : "pbFileViewer"
+      } ] ]
     } ], [ {
-      "type" : "component",
+      "type" : "container",
       "dimension" : {
         "xs" : 12,
         "sm" : 12,
-        "md" : 6,
-        "lg" : 6
+        "md" : 12,
+        "lg" : 12
       },
       "propertyValues" : {
         "cssClasses" : {
@@ -140,63 +268,156 @@
           "type" : "constant",
           "value" : false
         },
-        "text" : {
-          "type" : "interpolation",
-          "value" : "<span class=\"glyphicons glyphicons-upload\"></span> Upload"
-        },
-        "type" : {
-          "type" : "constant",
-          "value" : "page"
-        },
-        "targetUrl" : {
-          "type" : "constant",
-          "value" : "http://"
-        },
-        "pageToken" : {
-          "type" : "constant",
-          "value" : "uploadIdentification"
-        },
-        "processName" : {
-          "type" : "constant"
-        },
-        "processVersion" : {
-          "type" : "constant"
-        },
-        "taskId" : {
-          "type" : "constant"
-        },
-        "caseId" : {
-          "type" : "constant"
-        },
-        "target" : {
-          "type" : "constant",
-          "value" : "_self"
-        },
-        "appToken" : {
-          "type" : "constant"
-        },
-        "urlParams" : {
-          "type" : "expression",
-          "value" : "applicationURLParameters"
-        },
-        "alignment" : {
-          "type" : "constant",
-          "value" : "left"
-        },
-        "buttonStyle" : {
-          "type" : "constant",
-          "value" : "primary"
+        "repeatedCollection" : {
+          "type" : "variable",
+          "value" : ""
         }
       },
-      "reference" : "9c4b8cf2-8fed-4125-8b55-a8752437aded",
-      "id" : "pbLink"
-    }, {
-      "type" : "component",
+      "reference" : "7f04f057-9151-48b2-b9d1-93c67de887c6",
+      "id" : "pbContainer",
+      "rows" : [ [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Proof of domicile"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 2"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "d2eb8cac-ad7d-4fbf-820f-3f80e44f7f19",
+        "id" : "pbTitle"
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "expression",
+            "value" : "pendingProofOfDomicileTaskInfo.length !== 1"
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<span class=\"glyphicon glyphicon-camera\"></span> Capture & <span class=\"glyphicon glyphicon-upload\"></span> Upload"
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "page"
+          },
+          "targetUrl" : {
+            "type" : "constant",
+            "value" : "http://"
+          },
+          "pageToken" : {
+            "type" : "constant",
+            "value" : "uploadProofDomicile"
+          },
+          "processName" : {
+            "type" : "constant"
+          },
+          "processVersion" : {
+            "type" : "constant"
+          },
+          "taskId" : {
+            "type" : "constant"
+          },
+          "caseId" : {
+            "type" : "constant"
+          },
+          "target" : {
+            "type" : "constant",
+            "value" : "_self"
+          },
+          "appToken" : {
+            "type" : "constant"
+          },
+          "urlParams" : {
+            "type" : "expression",
+            "value" : "proofOfDomicileTaskInfoURLParameter"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "primary"
+          }
+        },
+        "reference" : "0a96775e-130d-493c-be7c-38fd10b2158a",
+        "id" : "pbLink"
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "Process document"
+          },
+          "url" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "document" : {
+            "type" : "variable",
+            "value" : "context.proofOfDomicile_ref"
+          },
+          "showPreview" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "aa67a14b-4f27-47da-95ef-307a7eb3a217",
+        "id" : "pbFileViewer"
+      } ] ]
+    } ], [ {
+      "type" : "container",
       "dimension" : {
         "xs" : 12,
         "sm" : 12,
-        "md" : 6,
-        "lg" : 6
+        "md" : 12,
+        "lg" : 12
       },
       "propertyValues" : {
         "cssClasses" : {
@@ -207,21 +428,149 @@
           "type" : "constant",
           "value" : false
         },
-        "allowHTML" : {
-          "type" : "constant",
-          "value" : true
-        },
-        "text" : {
-          "type" : "interpolation",
-          "value" : "Take a picture of a valid identification"
-        },
-        "alignment" : {
-          "type" : "constant",
-          "value" : "left"
+        "repeatedCollection" : {
+          "type" : "variable",
+          "value" : ""
         }
       },
-      "reference" : "9590074e-cac7-452d-a59a-58816bc0886a",
-      "id" : "pbText"
+      "reference" : "7130635e-1ccd-4a21-bcaf-ae9929554742",
+      "id" : "pbContainer",
+      "rows" : [ [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Tax statement"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 2"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "bed3e479-2adc-4977-b403-e97e7ef914cc",
+        "id" : "pbTitle"
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "expression",
+            "value" : "pendingTaxStatementTaskInfo.length !== 1"
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<span class=\"glyphicon glyphicon-camera\"></span> Capture & <span class=\"glyphicon glyphicon-upload\"></span> Upload"
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "page"
+          },
+          "targetUrl" : {
+            "type" : "constant",
+            "value" : "http://"
+          },
+          "pageToken" : {
+            "type" : "constant",
+            "value" : "uploadTaxStatement"
+          },
+          "processName" : {
+            "type" : "constant"
+          },
+          "processVersion" : {
+            "type" : "constant"
+          },
+          "taskId" : {
+            "type" : "constant"
+          },
+          "caseId" : {
+            "type" : "constant"
+          },
+          "target" : {
+            "type" : "constant",
+            "value" : "_self"
+          },
+          "appToken" : {
+            "type" : "constant"
+          },
+          "urlParams" : {
+            "type" : "expression",
+            "value" : "taxStatementTaskInfoURLParameter"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "primary"
+          }
+        },
+        "reference" : "4f47f84a-b880-4ea4-9b7e-5b7d6be82140",
+        "id" : "pbLink"
+      } ], [ {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "Process document"
+          },
+          "url" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "document" : {
+            "type" : "variable",
+            "value" : "context.taxStatement_ref"
+          },
+          "showPreview" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "6e2ad49a-cd82-4c86-87cc-d7650ffd869a",
+        "id" : "pbFileViewer"
+      } ] ]
     } ] ]
   } ], [ {
     "type" : "container",
@@ -238,48 +587,16 @@
       },
       "hidden" : {
         "type" : "expression",
-        "value" : "pendingProofOfDomicileTaskInfo.length !== 1"
+        "value" : "!hideFilesUploadPreview"
       },
       "repeatedCollection" : {
         "type" : "variable",
         "value" : ""
       }
     },
-    "reference" : "7f04f057-9151-48b2-b9d1-93c67de887c6",
+    "reference" : "91d13f7c-803a-4271-9518-b8ad02b7d6f5",
     "id" : "pbContainer",
     "rows" : [ [ {
-      "type" : "component",
-      "dimension" : {
-        "xs" : 12,
-        "sm" : 12,
-        "md" : 12,
-        "lg" : 12
-      },
-      "propertyValues" : {
-        "cssClasses" : {
-          "type" : "constant",
-          "value" : ""
-        },
-        "hidden" : {
-          "type" : "constant",
-          "value" : false
-        },
-        "text" : {
-          "type" : "interpolation",
-          "value" : "Proof of domicile"
-        },
-        "level" : {
-          "type" : "constant",
-          "value" : "Level 2"
-        },
-        "alignment" : {
-          "type" : "constant",
-          "value" : "left"
-        }
-      },
-      "reference" : "d2eb8cac-ad7d-4fbf-820f-3f80e44f7f19",
-      "id" : "pbTitle"
-    } ], [ {
       "type" : "component",
       "dimension" : {
         "xs" : 12,
@@ -302,103 +619,14 @@
         },
         "text" : {
           "type" : "interpolation",
-          "value" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,<br/>consectetur,<br/>adipisci velit..."
+          "value" : "<h4><b>Well done!</b> We received all information required to open your new account. \nYou should shortly receive an email to digitally signed the account contract.</h4>"
         },
         "alignment" : {
           "type" : "constant",
           "value" : "left"
         }
       },
-      "reference" : "362e1bd2-033b-4072-bd00-3284b6513f01",
-      "id" : "pbText"
-    } ] ]
-  } ], [ {
-    "type" : "container",
-    "dimension" : {
-      "xs" : 12,
-      "sm" : 12,
-      "md" : 12,
-      "lg" : 12
-    },
-    "propertyValues" : {
-      "cssClasses" : {
-        "type" : "constant",
-        "value" : ""
-      },
-      "hidden" : {
-        "type" : "expression",
-        "value" : "pendingTaxStatementTaskInfo.length !== 1"
-      },
-      "repeatedCollection" : {
-        "type" : "variable",
-        "value" : ""
-      }
-    },
-    "reference" : "1b51f1ff-13b2-4f89-82e3-0cdbb6921856",
-    "id" : "pbContainer",
-    "rows" : [ [ {
-      "type" : "component",
-      "dimension" : {
-        "xs" : 12,
-        "sm" : 12,
-        "md" : 12,
-        "lg" : 12
-      },
-      "propertyValues" : {
-        "cssClasses" : {
-          "type" : "constant",
-          "value" : ""
-        },
-        "hidden" : {
-          "type" : "constant",
-          "value" : false
-        },
-        "text" : {
-          "type" : "interpolation",
-          "value" : "Tax statement"
-        },
-        "level" : {
-          "type" : "constant",
-          "value" : "Level 2"
-        },
-        "alignment" : {
-          "type" : "constant",
-          "value" : "left"
-        }
-      },
-      "reference" : "bed3e479-2adc-4977-b403-e97e7ef914cc",
-      "id" : "pbTitle"
-    } ], [ {
-      "type" : "component",
-      "dimension" : {
-        "xs" : 12,
-        "sm" : 12,
-        "md" : 12,
-        "lg" : 12
-      },
-      "propertyValues" : {
-        "cssClasses" : {
-          "type" : "constant",
-          "value" : ""
-        },
-        "hidden" : {
-          "type" : "constant",
-          "value" : false
-        },
-        "allowHTML" : {
-          "type" : "constant",
-          "value" : true
-        },
-        "text" : {
-          "type" : "interpolation",
-          "value" : "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,<br/>consectetur,<br/>adipisci velit..."
-        },
-        "alignment" : {
-          "type" : "constant",
-          "value" : "left"
-        }
-      },
-      "reference" : "53e82a13-f298-498c-b284-abbd25c50ee1",
+      "reference" : "17f37462-85a7-4f54-98e7-03c5928dbc98",
       "id" : "pbText"
     } ] ]
   } ], [ {
@@ -416,7 +644,7 @@
       },
       "hidden" : {
         "type" : "constant",
-        "value" : false
+        "value" : true
       },
       "repeatedCollection" : {
         "type" : "variable",
@@ -480,7 +708,7 @@
         },
         "text" : {
           "type" : "interpolation",
-          "value" : "<b>pendingIdentificationTaskInfo</b>: {{pendingIdentificationTaskInfo | json}}<br />\n<b>pendingProofOfDomicileTaskInfo</b>: {{pendingProofOfDomicileTaskInfo | json}}<br />\n<b>pendingTaxStatementTaskInfo</b>: {{pendingTaxStatementTaskInfo | json}}<br />"
+          "value" : "<b>pendingIdentificationTaskInfo</b>: {{pendingIdentificationTaskInfo | json}}<br />\n<b>pendingProofOfDomicileTaskInfo</b>: {{pendingProofOfDomicileTaskInfo | json}}<br />\n<b>pendingTaxStatementTaskInfo</b>: {{pendingTaxStatementTaskInfo | json}}<br />\n<b>identificationTaskInfoURLParameter</b>: {{identificationTaskInfoURLParameter | json}}<br />"
         },
         "alignment" : {
           "type" : "constant",
@@ -529,6 +757,31 @@
     "applicationURLParameters" : {
       "type" : "expression",
       "value" : "return {\n    \"fileref\":$data.fileRef\n};",
+      "exposed" : false
+    },
+    "identificationTaskInfoURLParameter" : {
+      "type" : "expression",
+      "value" : "if($data.pendingIdentificationTaskInfo) {\n    return {\n        \"taskId\": $data.pendingIdentificationTaskInfo[0].id,\n        \"caseId\": $data.fileRef\n    };\n} else {\n    return null;\n}",
+      "exposed" : false
+    },
+    "context" : {
+      "type" : "url",
+      "value" : "/bonita/API/bpm/case/{{fileRef}}/context",
+      "exposed" : false
+    },
+    "hideFilesUploadPreview" : {
+      "type" : "expression",
+      "value" : "// By default we add the upload section\nvar hidden = true;\n\n// If we get all the data about pending steps\nif($data.pendingIdentificationTaskInfo && $data.pendingProofOfDomicileTaskInfo && $data.pendingTaxStatementTaskInfo) {\n    if(($data.pendingIdentificationTaskInfo.length + $data.pendingProofOfDomicileTaskInfo.length + $data.pendingTaxStatementTaskInfo.length) !== 0) {\n        hidden = false;\n    }\n}\n\nreturn hidden;",
+      "exposed" : false
+    },
+    "proofOfDomicileTaskInfoURLParameter" : {
+      "type" : "expression",
+      "value" : "if($data.pendingProofOfDomicileTaskInfo) {\n    return {\n        \"taskId\": $data.pendingProofOfDomicileTaskInfo[0].id,\n        \"caseId\": $data.fileRef\n    };\n} else {\n    return null;\n}",
+      "exposed" : false
+    },
+    "taxStatementTaskInfoURLParameter" : {
+      "type" : "expression",
+      "value" : "if($data.pendingTaxStatementTaskInfo) {\n    return {\n        \"taskId\": $data.pendingTaxStatementTaskInfo[0].id,\n        \"caseId\": $data.fileRef\n    };\n} else {\n    return null;\n}",
       "exposed" : false
     }
   },
